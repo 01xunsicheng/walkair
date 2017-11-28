@@ -1,0 +1,23 @@
+#mediaplayer_wrapper {
+	margin-left: -100%;
+}
+
+.banner_index {
+	height: 629px;
+	position: relative;
+	overflow: hidden;
+	width: 354px;
+}
+
+.banner_index .banner_wrap {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+.banner_index .banner_wrap li {
+	width: 354px;
+	float: left;
+}
+

@@ -1,1 +1,237 @@
-ee
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>首页</title>
+		<link rel="stylesheet" href="mycss/reset.css" />
+		<link rel="stylesheet" href="mycss/style.css" />
+		<link rel="stylesheet" href="mycss/css.css" />
+		<script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+	 <script type="text/javascript" src="js/json.js"></script>
+	</head>
+
+	<body>
+		<!--导航开始-->
+		<div class="header">
+			<div class="wraper">
+				<div class="left">
+					<a href="index.html"><img src="img/logo.jpg" /></a>
+				</div>
+				<div class="right">
+					<ul class="nav">
+						<li class="select"><a href="index.html">首页</a></li>
+						<li><a href="product.html">产品列表</a></li>
+						<li><a href="about.html">公司介绍</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+						<li><a href="download.html">APP下载</a></li>
+						<li><a href="join.html">加入我们</a></li>
+						<li class="buy"><a href="" id="buy">立即购买</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--导航结束-->
+		<!--主体内容开始-->
+		<div class="main main_img" id="index">
+			<script id="index-tmpl" type="text/html">
+				<!--[if info]-->
+				<!--banner开始-->
+				<div class="banner" style="max-width: 1579px;margin: 0 auto;height:835px;" id="banner">
+					<div class="wraper relative">
+						<ul>
+							<li class="li_left" style="height:835px;background: none;">
+								<div class="lleft content">
+									<p class="size35">
+										<!--[info.productDescribe]-->
+									</p>
+									<p class="info">
+										<!--[info.productFontTitle]--><span class="size30 m_l_10"><!--[info.productHighTitle]--></span>
+										<!--[info.productBackName]-->
+									</p>
+									<p class="info">
+										<!--[info.productFun]-->
+									</p>
+									<p><span class="size35"><!--[info.productPrice]--><span class="size18">元</span></span>
+										<a href="technique.html?tid=<!--[info.tid]-->" class="m_l_70">技术规格></a></p>
+								</div>
+								<div class="lright relative" style="height: 835px;">
+
+									<div id="banner_right">
+										<!--右边区域效果开始-->
+										<!--[each list as value i]-->
+										<p class="myimg" style="background-image: url(<!--[value.img]-->);"></p>
+										<!--[/each]-->
+									</div>
+									<p class="color">颜色:
+										<!--[each productColor as value i]-->
+										<span><!--[value.name]-->&nbsp;/</span>
+										<!--[/each]-->
+									</p>
+									<div class="hq">
+										<!--[each productColor as value i]-->
+										<i class="yicon" style="background: <!--[value.color]-->;"></i>
+										<!--[/each]-->
+									</div>
+
+									<!--右边区域效果结束-->
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--banner结束-->
+         <!--[/if]-->
+				<p class="img2" style="background-image: url(<!--[model2Photo.picturePath]-->); height: <!--[model2Photo.pictureHeight]-->px;"></p>
+				<!--健康呼吸好环境开始-->
+				<div class="img3" style="background-image: url(<!--[model3Photo.picturePath]-->);height: <!--[model3Photo.pictureHeight]-->px;">
+					<div class="wraper relative" style="height:<!--[model3Photo.pictureHeight]-->px;overflow: hidden;">
+						<img src="img/index/index_04_01.png" class="img3_1" />
+					</div>
+				</div>
+				<div class="t_center m_t_20">
+					<img src="<!--[model4TitlePhoto.picturePath]-->" style="height:<!--[model4TitlePhoto.pictureHeight]-->px;" />
+				</div>
+				<div class="t_center m_t_20 size20">
+					<!--[=img.model4Photo]-->
+				</div>
+
+				<div class="t_center m_t_20 size40">
+					<!--[img.model5Title]-->
+				</div>
+				<p class="img5" style="background-image: url(<!--[model5Photo.picturePath]-->); height: <!--[model5Photo.pictureHeight]-->px;"></p>
+
+				<div class="t_center m_t_20 size20">
+					<!--[img.model6PhotoTitle]-->
+				</div>
+
+				<!--环境动画开始-->
+				<div class="img6" style="background-image: url(<!--[model6Photo.picturePath]-->);height:<!--[model6Photo.pictureHeight]-->px;">
+					<div class="wraper relative t_center" style="height:<!--[model6Photo.pictureHeight]-->px;overflow: hidden;">
+						<div class="qllist">
+							<img src="img/index/hj/1.png" class="ql1" />
+							<img src="img/index/hj/2.png" class="ql2" />
+							<img src="img/index/hj/3.png" class="ql3" />
+							<img src="img/index/hj/4.png" class="ql4" />
+							<img src="img/index/hj/5.png" class="ql5" />
+							<img src="img/index/hj/6.png" class="ql6" />
+						</div>
+						<p><img src="img/index/hj/pr_2.png" class="dbimg" /></p>
+					</div>
+				</div>
+				<!--环境动画结束-->
+				<!--视频开始-->
+				<!--<p class="img7"></p>-->
+				<!--<div id="mediaplayer"></div>-->
+				<video style="width: 100%;max-width: 1579px;" controls="controls">
+  <source src="jwplayer/sp.ogg" type="video/ogg">
+  <source src="jwplayer/sp.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+				<!--视频结束-->
+				<div class="t_center m_t_20 size20">
+					<!--[img.model8Title]-->
+				</div>
+				<div class="t_center m_t_20 size16">
+					<!--[img.model8SideTitle]-->
+				</div>
+				<p class="img5" style="background-image: url(<!--[model8Photo.picturePath]-->); height: <!--[model8Photo.pictureHeight]-->px;"></p>
+
+				<div class="img9" style="background-image: url(<!--[model9Photo.picturePath]-->);height:<!--[model9Photo.pictureHeight]-->px;">
+				</div>
+
+				<div class="img10 relative" style="background-image: url(img/index/bg_7.png);">
+					<p class="img10 absolute" style="background-image: url(img/index/iPhone6.png);width: 479px;height: 906px;right: 0;">
+						<div class="m_t_40 absolute" style="right: 63px;top: 82px;">
+							<!--轮播开始-->
+<div class="banner_index">
+			
+			<ul class="banner_wrap" id="banner_index">
+									<!--[each model10Photo as value i]-->
+									<li>
+										<a><img src="<!--[value.img]-->" /></a>
+									</li>
+									<!--[/each]-->
+								</ul>
+		</div>
+							<!--轮播结束-->
+						</div>
+					</p>
+				</div>
+			</script>
+		</div>
+		<!--主体内容结束-->
+		<div class="footer">
+			<!--帮助中心开始-->
+			<div class="help">
+				<div class="wraper">
+					<ul>
+						<li>
+							<p class="name">帮助中心</p>
+							<p><a href="">购物指南</a></p>
+							<p><a href="">支付方式</a></p>
+							<p><a href="">配送方式</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p class="name">服务支持</p>
+							<p><a href="">售后政策</a></p>
+							<p><a href="">自助服务</a></p>
+							<p><a href="">相关下载</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p class="name">关于我们</p>
+							<p><a href="">公司简介</a></p>
+							<p><a href="">联系我们</a></p>
+							<p><a href="">加入我们</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p class="name">关注我们</p>
+							<p><a href="">新浪微博</a></p>
+							<p><a href="">官方微信</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li class="last">
+							<p>021-62262937</p>
+							<p>周一至周日 (9:00-21:00)</p>
+							<p>(仅收市话费)</p>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--帮助中心结束-->
+			<!--版权部分开始-->
+
+			<div class="wraper">
+				<div class="copyright">
+					© 2016 Copyright Shanghai Wiscom Info-Tech Co,ltd 沪ICP备16026994号
+				</div>
+			</div>
+		</div>
+		<!--版权部分结束-->
+		<script type="text/javascript" src="js/template.js"></script>
+		<script type="text/javascript" src="js/template-config.js"></script>
+		<script type="text/javascript" src="js/globle.js"></script>
+		<script type="text/javascript" src="js/lrtk.js"></script>
+		<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+
+		<script type="text/javascript">
+		
+			$(function() {
+				getHomePage();
+				getCatlog();
+			})
+			
+		</script>
+	</body>
+
+</html>

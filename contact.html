@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>联系我们</title>
+		<link rel="stylesheet" href="mycss/reset.css" />
+		<link rel="stylesheet" href="mycss/style.css" />
+		<script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+
+	</head>
+	<body>
+	<!--导航开始-->	
+	<div class="header">
+		<div class="wraper">
+			<div class="left">
+				<a href="index.html"><img src="img/logo.jpg"/></a>
+			</div>
+			<div class="right">
+				<ul class="nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="product.html">产品列表</a></li>
+					<li><a href="about.html">公司介绍</a></li>
+					<li class="select"><a href="contact.html">联系我们</a></li>
+					<li><a href="download.html">APP下载</a></li>
+					<li ><a href="join.html">加入我们</a></li>
+					<li class="buy"><a href="" id="buy">立即购买</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--导航结束-->
+	<!--主体内容开始-->
+	<div class="main contact" >
+		<div class="wraper relative" >
+		<p><img src="img/contact/banner.png" id="contact_banner"/></p>
+		<div class="" id="contact">
+		 <script id="contact-tmpl" type="text/html">
+                    
+		<p class="name m_t_60">
+			商务合作
+		</p>
+		<ul class="con_list">
+			<!--[each list1 as value i]-->
+			<li>
+				<p>
+					<img src="<!--[value.contactFile]-->" alt="" /></p>
+					<div class="info">
+					<p><img src="img/contact/icon_phone.png"/>客服电话：<!--[value.contactPhone]--></p>
+					<p title="<!--[value.contactAddress]-->"><img src="img/contact/icon_address.png"/>公司地址：<!--[value.contactAddress]--></p>
+				</div>
+			</li>
+			
+		 <!--[/each]-->	
+		</ul>
+		<div class="clear"></div>
+		<p class="name">
+			售后服务
+		</p>
+		<ul class="con_list">
+			<!--[each list2 as value i]-->
+			<li>
+				<p>
+					<img src="<!--[value.contactFile]-->" alt="" /></p>
+					<div class="info">
+					<p><img src="img/contact/icon_phone.png"/>客服电话：<!--[value.contactPhone]--></p>
+					<p title="<!--[value.contactAddress]-->"><img src="img/contact/icon_address.png"/>公司地址：<!--[value.contactAddress]--></p>
+				</div>
+			</li>
+			
+		 <!--[/each]-->	
+		</ul>
+		<div class="clear"></div>
+		<p class="name">
+			销售门店
+		</p>
+		<ul class="con_list">
+			<!--[each list3 as value i]-->
+			<li>
+				<p>
+					<img src="<!--[value.contactFile]-->" alt="" /></p>
+					<div class="info">
+					<p><img src="img/contact/icon_phone.png"/>客服电话：<!--[value.contactPhone]--></p>
+					<p title="<!--[value.contactAddress]-->"><img src="img/contact/icon_address.png"/>公司地址：<!--[value.contactAddress]--></p>
+				</div>
+			</li>
+			
+		 <!--[/each]-->	
+		</ul>
+
+        </script>
+        </div>
+		<div class="clear"></div>
+		</div>
+	</div>
+	<!--主体内容结束-->
+	<div class="footer">
+	<!--帮助中心开始-->
+	<div class="help">
+		<div class="wraper">
+			<ul>
+				<li>
+					<p class="name">帮助中心</p>
+					<p><a href="">购物指南</a></p>
+					<p><a href="">支付方式</a></p>
+					<p><a href="">配送方式</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="name">服务支持</p>
+					<p><a href="">售后政策</a></p>
+					<p><a href="">自助服务</a></p>
+					<p><a href="">相关下载</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="name">关于我们</p>
+					<p><a href="">公司简介</a></p>
+					<p><a href="">联系我们</a></p>
+					<p><a href="">加入我们</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="name">关注我们</p>
+					<p><a href="">新浪微博</a></p>
+					<p><a href="">官方微信</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li class="last">				
+					<p>021-62262937</p>
+					<p>周一至周日 (9:00-21:00)</p>
+					<p>(仅收市话费)</p>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--帮助中心结束-->
+	<!--版权部分开始-->
+	
+		<div class="wraper">
+			<div class="copyright">
+			© 2016 Copyright Shanghai Wiscom Info-Tech Co,ltd 沪ICP备16026994号
+		</div>
+	</div>
+	</div>
+	<!--版权部分结束-->
+	<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/template-config.js"></script>
+<script type="text/javascript" src="js/globle.js"></script>
+	<script type="text/javascript">
+	getContactUs();
+	getCatlog ();	
+	</script>
+	</body>
+</html>
